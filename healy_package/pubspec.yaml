@@ -2,6 +2,7 @@ name: healy_watch_sdk
 description: A new Flutter package.
 version: 0.0.1
 homepage: www.healy.com
+publish_to: none
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
@@ -19,7 +20,10 @@ dependencies:
   path_provider: ^2.0.0
 
   flutter_plugin:
-    path: ../flutter_plugin
+    git:
+      url: https://github.com/badjio/healywatch_reactive
+      ref: master
+      path: flutter_plugin
 dependency_overrides:
   reactive_ble_mobile: '5.0.1'
 
